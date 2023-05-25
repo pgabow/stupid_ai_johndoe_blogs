@@ -1,6 +1,6 @@
 # Stupid AI-powered John Doe's Blog ver 3.0 - app using the Next 13, Hygraph CMS Api, Kandinsky 2.1 AI model
 
-See here - https://stupid-ai-johndoe-blog.vercel.app
+See here - https://stupid-ai-johndoe-blogs.vercel.app
 
 ## Next.js 13 Client/Server components, metadata and search engine optimization (SEO), Hygraph CMS Api, GraphQL
 
