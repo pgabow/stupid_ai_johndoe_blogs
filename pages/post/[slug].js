@@ -36,8 +36,8 @@ const PostDetails = ({ post }) => {
         <div className='lg:col-span-8 col-span-1'>
           <PostDetail post={post} />
           {/* <Author author={post.author} /> */}
-          <CommentsForm slug={post.slug} />
           <Comments slug={post.slug} />
+          <CommentsForm slug={post.slug} />
         </div>
         <div className='lg:col-span-4 col-span-1'>
           <div className='lg:sticky relative lg:top-20'>

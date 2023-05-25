@@ -28,6 +28,9 @@ const Comments = ({ slug }) => {
                                 { ')' } */}
                 </p>
                 <p className='whitespace-pre-line w-full'>{parse(comment.comment)}</p>
+                <p className='italic text-blue-400 text-xs'>
+                  {moment(comment.createdAt).format('DD/MM/YYYY')}
+                </p>
               </div>
             ))}
           </div>
