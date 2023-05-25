@@ -17,12 +17,12 @@ const Comments = ({ slug }) => {
         {comments.length > 0 && (
           <div className='bg supports-backdrop-blur:bg-white/95 dark:bg-zinc-900/75 border border-sky-900 rounded-lg p-8 pb-12 mb-8'>
             <h3 className='text-xl mb-8 font-semibold border-b border-sky-900 pb-4'>
-              {comments.length} Comment
+              {comments.length} Comment's
             </h3>
             {comments.map((comment) => (
               <div key={comment.createdAt} className='border-b border-sky-900 mb-4 pb-4'>
                 <p className='mb-4'>
-                  <span className='font-semibold'>@{comment.name}</span> commented:
+                  <span className='font-semibold text-blue-400'>@{comment.name}</span> commented:
                   {/* { ' (' }
                                 { moment(comment.createdAt).format('DD/MM/YYYY') }
                                 { ')' } */}
