@@ -73,7 +73,7 @@ const Intro = () => {
         <h3 className='mb-8 m-8 pb-4 font-semibold border-b border-sky-900'>About</h3>
         <div>
           {/* <p className='mb-4 leading-relaxed m-8'>Blog team desc</p> */}
-          <p className='m-8 max-w-sm p-0.5 text-base text-text sm:p-2'>
+          <p className='m-8 max-w-xs p-0.5 text-base text-text sm:p-2'>
             Stupid AI-powered Blog by{' '}
             <a
               href={`https://twitter.com/@JohnDoe`}

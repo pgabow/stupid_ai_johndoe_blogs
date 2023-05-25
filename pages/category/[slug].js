@@ -66,7 +66,7 @@ const CategoryPost = ({ posts }) => {
   return (
     <div className='container mx-auto px-5 md:px-10 mb-8 mt-20 min-h-screen'>
       <Head>
-        <title>{`Chủ đề: ${categoryName} | UniTech Blog`}</title>
+        <title>{`Topic: ${categoryName} | Stupid Blog`}</title>
         <meta property='og:image' content='/ogImg.png' />
       </Head>
       <div className='grid grid-cols-1 lg:grid-cols-12 lg:gap-12'>
