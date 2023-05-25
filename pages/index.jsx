@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Head from 'next/head'
-import { FaAngleDown } from 'react-icons/fa';
+import { FaAngleDown, FaTerminal } from 'react-icons/fa'
 import { PostCard, Categories, PostWidget, Button } from '../components';
 import { getPosts } from '../services'
 import { FeaturedPosts } from '../sections';
@@ -51,7 +51,7 @@ export default function Home({ posts }) {
                 <Button onClick={() => handleViewMore()}>
                   <span className='flex flex-col items-center justify-center'>
                     <span className='text-sm'>see more</span>
-                    <FaAngleDown className='w-4 h-4 group-hover:translate-y-1 transition-all' />
+                    <FaTerminal className='w-4 h-4 group-hover:translate-y-1 transition-all' />
                   </span>
                 </Button>
               )}

@@ -43,7 +43,7 @@ const PostDetail = ({ post }) => {
                     { post.categories.map(category => (
                         <Link href={ `/category/${category.slug}` } key={ category.slug }>
                             <span className='inline-block mr-3 mb-3 category'>
-                                { category.name }
+                                #{ category.name }
                             </span>
                         </Link>
                     )) }

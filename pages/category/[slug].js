@@ -73,7 +73,7 @@ const CategoryPost = ({ posts }) => {
         <div className='lg:col-span-8 col-span-1'>
           <div className='bg supports-backdrop-blur:bg-white/95 dark:bg-zinc-900/75 border border-sky-900 rounded-lg px-8 py-4 mb-8'>
             <p className='text-xl font-bold'>
-              Topic: <span className='text-blue-400'>{`${categoryName}`}</span>
+              Tag's: <span className='text-blue-400'>#{`${categoryName}`}</span>
             </p>
           </div>
           {showPosts.map((post, index) => (

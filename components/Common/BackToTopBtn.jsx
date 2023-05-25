@@ -13,10 +13,10 @@ const BackToTopBtn = () => {
     }
     const toggleVisible = () => {
         const scrolled = document.documentElement.scrollTop;
-        if (scrolled > 300) {
+        if (scrolled > 700) {
             setVisible(true)
         }
-        else if (scrolled <= 300) {
+        else if (scrolled <= 700) {
             setVisible(false)
         }
     };
@@ -41,7 +41,7 @@ const BackToTopBtn = () => {
                 item && (
                     <animated.button
                         onClick={ scrollToTop }
-                        className='fixed z-50 bottom-6 left-6 w-[50px] h-[50px] flex items-center justify-center rounded-full font-bold text-2xl bg-blue-400 drop-shadow-lg transition-all hover:bg-blue-500 cursor-pointer select-none group'
+                        className='fixed z-50 bottom-6 left-6 w-[50px] h-[50px] flex items-center justify-center rounded-md font-bold text-2xl bg-slate-800 drop-shadow-lg transition-all hover:bg-slate-900 cursor-pointer select-none group'
                         style={ style }
                     >
                         <FaArrowUp className=' group-hover:-translate-y-[2px] transition-all' />

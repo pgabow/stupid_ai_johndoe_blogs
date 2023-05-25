@@ -46,7 +46,7 @@ const PostCard = ({ post }) => {
                 { post.categories.map(category => (
                     <Link href={ `/category/${category.slug}` } key={ category.slug }>
                         <span className='inline-block mx-2 mb-2 category'>
-                            { category.name }
+                            #{ category.name }
                         </span>
                     </Link>
                 )) }

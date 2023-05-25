@@ -130,12 +130,12 @@ const CommentsForm = ({ slug }) => {
           <button
             type='button'
             onClick={handlePostSubmission}
-            className='bg-blue-400 inline-block rounded-full font-bold px-8 py-3 transition-all hover:bg-blue-700'
+            className='bg-slate-700 inline-block rounded-xl font-bold px-8 py-3 transition-all hover:bg-slate-800'
           >
             Comment
           </button>
           {showSuccessMessage && (
-            <span className='float-right font-semibold mt-3 text-green-500'>Thank you</span>
+            <span className='float-right font-semibold mt-3 text-green-500'>Thank you! _)</span>
           )}
         </div>
       </div>
