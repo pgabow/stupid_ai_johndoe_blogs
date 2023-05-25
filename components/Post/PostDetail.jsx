@@ -77,9 +77,9 @@ const PostDetail = ({ post }) => {
               img: ({ src, alt, width, height }) => (
                 <Image
                   src={src}
-									// истанивать в базе значение!
+                  // истанивать в базе значение!
                   // alt={alt}
-                  alt='alt картинки из базы'
+                  alt={post.title}
                   width={width}
                   height={height}
                   className='mb-4'
