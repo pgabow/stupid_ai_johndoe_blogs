@@ -50,8 +50,17 @@ const PostDetails = ({ post }) => {
         <link rel='icon' href='/favicon.png' />
         <meta property='og:image:width' content='2400' />
         <meta property='og:image:height' content='1260' />
+        {/* <meta property='og:url' content='https://stupid-ai-johndoe-blogs.vercel.app/intro' /> */}
         <meta
           property='og:image'
+          content={`https://og.tailgraph.com/og?fontFamily=Montserrat&title=&titleTailwind=font-bold%20text-cyan-400%20text-3xl%20text-right&titleFontFamily=Montserrat&text=${encodeURIComponent(
+            post?.title
+          )}&textTailwind=font-medium%20text-white%20text-left%20text-7xl%20pt-20&textFontFamily=Raleway&logoUrl=https%3A%2F%2Fstupid-ai-johndoe-blogs.vercel.app%2Flogo.png&logoTailwind=text-center%20bg-transparent&bgUrl=${encodeURIComponent(
+            post?.featuredImage.url
+          )}&bgTailwind=bg-no-repeat%20bg-cover%20bg-opacity-20&footer=https%3A%2F%2Fstupid-ai-johndoe-blogs.vercel.app&footerTailwind=text-xl%20underline%20text-cyan-500&t=1685344677897&refresh=1`}
+        />
+        <meta
+          property='og:image:url'
           content={`https://og.tailgraph.com/og?fontFamily=Montserrat&title=&titleTailwind=font-bold%20text-cyan-400%20text-3xl%20text-right&titleFontFamily=Montserrat&text=${encodeURIComponent(
             post?.title
           )}&textTailwind=font-medium%20text-white%20text-left%20text-7xl%20pt-20&textFontFamily=Raleway&logoUrl=https%3A%2F%2Fstupid-ai-johndoe-blogs.vercel.app%2Flogo.png&logoTailwind=text-center%20bg-transparent&bgUrl=${encodeURIComponent(
