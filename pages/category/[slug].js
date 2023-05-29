@@ -76,8 +76,8 @@ const CategoryPost = ({ posts }) => {
           name='viewport'
           content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no'
         />
-        <meta property='og:image:width' content='1200' />
-        <meta property='og:image:height' content='630' />
+        <meta property='og:image:width' content='2400' />
+        <meta property='og:image:height' content='1260' />
         <meta http-equiv='author' content='P.Gabov' />
         <meta name='robots' content='index,follow' />
         <meta
