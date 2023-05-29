@@ -12,6 +12,8 @@ const intro = () => {
             name='description'
             content='Always fresh the dumbest of the dumbest news and ideas!'
           />
+          <meta property='og:image:width' content='1200' />
+          <meta property='og:image:height' content='630' />
           <meta
             name='viewport'
             content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no'

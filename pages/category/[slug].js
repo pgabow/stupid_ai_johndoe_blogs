@@ -76,6 +76,8 @@ const CategoryPost = ({ posts }) => {
           name='viewport'
           content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no'
         />
+        <meta property='og:image:width' content='1200' />
+        <meta property='og:image:height' content='630' />
         <meta http-equiv='author' content='P.Gabov' />
         <meta name='robots' content='index,follow' />
         <meta
@@ -109,7 +111,6 @@ const CategoryPost = ({ posts }) => {
         />
         <meta name='format-detection' content='telephone=no' />
         <link rel='manifest' href='./manifest.json' />
-				
       </Head>
       <div className='grid grid-cols-1 lg:grid-cols-12 lg:gap-12'>
         <div className='lg:col-span-8 col-span-1'>
