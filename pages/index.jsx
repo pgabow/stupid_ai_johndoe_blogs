@@ -65,8 +65,12 @@ export default function Home({ posts }) {
           property='og:image'
           content="https://og.tailgraph.com/og?fontFamily=Roboto&title=Stupid%20John%20Doe's%20Blog&titleTailwind=font-bold%20text-orange-600%20text-%5B%23F83E00%5D%20mb-20%20text-6xl&titleFontFamily=Montserrat&text=%20AI-powered%20&textTailwind=mt-4%20text-5xl%20text-cyan-500&logoUrl=&logoTailwind=bg-blueGray-200%20text-center%20h-40%20object-top&bgUrl=&bgTailwind=bg-coolGray-800&overlayTailwind=bg-transparent&footer=https%3A%2F%2Fstupid-ai-johndoe-blogs.vercel.app&footerTailwind=text-orange-600%20text-%5B%23F83E00%5D&t=1685339518257&refresh=1"
         />
+        <meta
+          property='og:image:url'
+          content="https://og.tailgraph.com/og?fontFamily=Roboto&title=Stupid%20John%20Doe's%20Blog&titleTailwind=font-bold%20text-orange-600%20text-%5B%23F83E00%5D%20mb-20%20text-6xl&titleFontFamily=Montserrat&text=%20AI-powered%20&textTailwind=mt-4%20text-5xl%20text-cyan-500&logoUrl=&logoTailwind=bg-blueGray-200%20text-center%20h-40%20object-top&bgUrl=&bgTailwind=bg-coolGray-800&overlayTailwind=bg-transparent&footer=https%3A%2F%2Fstupid-ai-johndoe-blogs.vercel.app&footerTailwind=text-orange-600%20text-%5B%23F83E00%5D&t=1685339518257&refresh=1"
+        />
         <meta property='og:site_name' content='Stupid AI-powered Blog John Doe' />
-        {/* <meta property='og:url' content='http://pgabow.ru/' /> */}
+        <meta property='og:url' content='https://stupid-ai-johndoe-blogs.vercel.app' />
         <meta name='twitter:card' content='summary' />
         <meta name='twitter:site' content='@paul.gabow' />
         <meta name='twitter:title' content='Stupid AI-powered Blog John Doe' />

@@ -59,11 +59,11 @@ const PostDetails = ({ post }) => {
           )}&bgTailwind=bg-no-repeat%20bg-cover%20bg-opacity-20&footer=https%3A%2F%2Fstupid-ai-johndoe-blogs.vercel.app&footerTailwind=text-xl%20underline%20text-cyan-500&t=1685344677897&refresh=1`}
         />
         <meta name='description' content={post.title} />
-        {/* <meta property='og:title' content={post.title} /> */}
+        <meta property='og:title' content="Stupid AI-powered John Doe's Blog" />
         <meta property='og:description' content={post.title} />
         <meta property='og:type' content='article' />
         <meta name='twitter:card' content='summary' />
-        {/* <meta name='twitter:title' content={post.title} /> */}
+        <meta name='twitter:title' content="Stupid AI-powered John Doe's Blog" />
         <meta name='twitter:description' content={post.title} />
         <meta
           name='twitter:image'
