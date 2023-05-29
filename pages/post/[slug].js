@@ -56,7 +56,7 @@ const PostDetails = ({ post }) => {
             post?.title
           )}&textTailwind=font-medium%20text-white%20text-left%20text-7xl%20pt-20&textFontFamily=Raleway&logoUrl=https%3A%2F%2Fstupid-ai-johndoe-blogs.vercel.app%2Flogo.png&logoTailwind=text-center%20bg-transparent&bgUrl=${encodeURIComponent(
             post?.featuredImage.url
-          )}&bgTailwind=bg-no-repeat%20bg-cover%20bg-opacity-20&footer=https%3A%2F%2Fstupid-ai-johndoe-blogs.vercel.app&footerTailwind=text-xl%20underline%20text-cyan-500`}
+          )}&bgTailwind=bg-no-repeat%20bg-cover%20bg-opacity-20&footer=https%3A%2F%2Fstupid-ai-johndoe-blogs.vercel.app&footerTailwind=text-xl%20underline%20text-cyan-500&t=1685344677897&refresh=1`}
         />
         <meta name='description' content={post.title} />
         {/* <meta property='og:title' content={post.title} /> */}
@@ -71,7 +71,7 @@ const PostDetails = ({ post }) => {
             post?.title
           )}&textTailwind=font-medium%20text-white%20text-left%20text-7xl%20pt-20&textFontFamily=Raleway&logoUrl=https%3A%2F%2Fstupid-ai-johndoe-blogs.vercel.app%2Flogo.png&logoTailwind=text-center%20bg-transparent&bgUrl=${encodeURIComponent(
             post?.featuredImage.url
-          )}&bgTailwind=bg-no-repeat%20bg-cover%20bg-opacity-20&footer=https%3A%2F%2Fstupid-ai-johndoe-blogs.vercel.app&footerTailwind=text-xl%20underline%20text-cyan-500`}
+          )}&bgTailwind=bg-no-repeat%20bg-cover%20bg-opacity-20&footer=https%3A%2F%2Fstupid-ai-johndoe-blogs.vercel.app&footerTailwind=text-xl%20underline%20text-cyan-500&t=1685344677897&refresh=1`}
         />
         <meta name='format-detection' content='telephone=no' />
         <link rel='manifest' href='./manifest.json' />
