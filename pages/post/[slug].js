@@ -9,17 +9,21 @@ import { PostDetail, Categories, PostWidget, Comments, CommentsForm, Loader, Not
 
 const PostDetails = ({ post }) => {
 	const tempForUrl = `&t=1685344677897&refresh=1`
-	const ogImageComplite = `https://og.tailgraph.com/og?fontFamily=Montserrat&title=&titleTailwind=font-bold%20text-cyan-400%20text-3xl%20text-right&titleFontFamily=Montserrat&text=${encodeURIComponent(
-    post?.title
-  )}&textTailwind=font-medium%20text-white%20text-left%20text-7xl%20pt-20&textFontFamily=Raleway&logoUrl=https%3A%2F%2Fstupid-ai-johndoe-blogs.vercel.app%2Flogo.png&logoTailwind=text-center%20bg-transparent&bgUrl=${encodeURIComponent(
-    post?.featuredImage.url
-  )}&bgTailwind=bg-no-repeat%20bg-cover%20bg-opacity-20&footer=https%3A%2F%2Fstupid-ai-johndoe-blogs.vercel.app&footerTailwind=text-xl%20underline%20text-cyan-500`
+	// const ogImageComplite = `https://og.tailgraph.com/og?fontFamily=Montserrat&title=&titleTailwind=font-bold%20text-cyan-400%20text-3xl%20text-right&titleFontFamily=Montserrat&text=${encodeURIComponent(
+  //   post?.title
+  // )}&textTailwind=font-medium%20text-white%20text-left%20text-7xl%20pt-20&textFontFamily=Raleway&logoUrl=https%3A%2F%2Fstupid-ai-johndoe-blogs.vercel.app%2Flogo.png&logoTailwind=text-center%20bg-transparent&bgUrl=${encodeURIComponent(
+  //   post?.featuredImage.url
+  // )}&bgTailwind=bg-no-repeat%20bg-cover%20bg-opacity-20&footer=https%3A%2F%2Fstupid-ai-johndoe-blogs.vercel.app&footerTailwind=text-xl%20underline%20text-cyan-500`
         {
           /* ${encodeURIComponent(post.title)} */
         }
         {
           /* ${encodeURIComponent(post.featuredImage.url)} */
         }
+				const imageOgGen = `${process.env.NEXT_PUBLIC_URL_DEPLOY}/api/og?title=${encodeURIComponent(
+          post?.title
+        )}&image=${encodeURIComponent(post?.featuredImage.url)}`
+
   // console.log(ogImageComplite)
 	const router = useRouter();
 
@@ -51,18 +55,8 @@ const PostDetails = ({ post }) => {
         {/* <meta property='og:image:width' content='2400' />
         <meta property='og:image:height' content='1260' /> */}
         {/* <meta property='og:url' content='https://stupid-ai-johndoe-blogs.vercel.app/intro' /> */}
-        <meta
-          property='og:image'
-          content={`${process.env.NEXT_PUBLIC_URL_DEPLOY}/api/og?title=${encodeURIComponent(
-            post?.title
-          )}&image=${encodeURIComponent(post?.featuredImage.url)}`}
-        />
-        <meta
-          property='og:image:url'
-          content={`${process.env.NEXT_PUBLIC_URL_DEPLOY}/api/og?title=${encodeURIComponent(
-            post?.title
-          )}&image=${encodeURIComponent(post?.featuredImage.url)}`}
-        />
+        <meta property='og:image' content={imageOgGen} />
+        <meta property='og:image:url' content={imageOgGen} />
         {/* <meta
           property='og:image'
           content={`https://og.tailgraph.com/og?fontFamily=Montserrat&title=&titleTailwind=font-bold%20text-cyan-400%20text-3xl%20text-right&titleFontFamily=Montserrat&text=${encodeURIComponent(
@@ -76,12 +70,7 @@ const PostDetails = ({ post }) => {
         <meta property='og:description' content={post.title} />
         <meta property='og:type' content='article' />
         <meta name='twitter:card' content='summary' />
-        <meta
-          name='twitter:image'
-          content={`${process.env.NEXT_PUBLIC_URL_DEPLOY}/api/og?title=${encodeURIComponent(
-            post?.title
-          )}&image=${encodeURIComponent(post?.featuredImage.url)}`}
-        />
+        <meta name='twitter:image' content={imageOgGen} />
         <meta name='twitter:card' content='summary_large_image' />
 
         <meta name='twitter:title' content="Stupid AI-powered John Doe's Blog" />
