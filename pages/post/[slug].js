@@ -20,7 +20,7 @@ const PostDetails = ({ post }) => {
         {
           /* ${encodeURIComponent(post.featuredImage.url)} */
         }
-  console.log(ogImageComplite)
+  // console.log(ogImageComplite)
 	const router = useRouter();
 
   if (router.isFallback) {
@@ -48,40 +48,52 @@ const PostDetails = ({ post }) => {
         <meta property='og:locale' content='en_US' />
         <meta name='Address' content='Russia, Moscow' />
         <link rel='icon' href='/favicon.png' />
-        <meta property='og:image:width' content='2400' />
-        <meta property='og:image:height' content='1260' />
+        {/* <meta property='og:image:width' content='2400' />
+        <meta property='og:image:height' content='1260' /> */}
         {/* <meta property='og:url' content='https://stupid-ai-johndoe-blogs.vercel.app/intro' /> */}
         <meta
+          property='og:image'
+          content={`${process.env.NEXT_PUBLIC_URL_DEPLOY}/api/og?title=${encodeURIComponent(
+            post?.title
+          )}&image=${encodeURIComponent(post?.featuredImage.url)}`}
+        />
+        <meta
+          property='og:image:url'
+          content={`${process.env.NEXT_PUBLIC_URL_DEPLOY}/api/og?title=${encodeURIComponent(
+            post?.title
+          )}&image=${encodeURIComponent(post?.featuredImage.url)}`}
+        />
+        {/* <meta
           property='og:image'
           content={`https://og.tailgraph.com/og?fontFamily=Montserrat&title=&titleTailwind=font-bold%20text-cyan-400%20text-3xl%20text-right&titleFontFamily=Montserrat&text=${encodeURIComponent(
             post?.title
           )}&textTailwind=font-medium%20text-white%20text-left%20text-7xl%20pt-20&textFontFamily=Raleway&logoUrl=https%3A%2F%2Fstupid-ai-johndoe-blogs.vercel.app%2Flogo.png&logoTailwind=text-center%20bg-transparent&bgUrl=${encodeURIComponent(
             post?.featuredImage.url
           )}&bgTailwind=bg-no-repeat%20bg-cover%20bg-opacity-20&footer=https%3A%2F%2Fstupid-ai-johndoe-blogs.vercel.app&footerTailwind=text-xl%20underline%20text-cyan-500&t=1685344677897&refresh=1`}
-        />
-        <meta
-          property='og:image:url'
-          content={`https://og.tailgraph.com/og?fontFamily=Montserrat&title=&titleTailwind=font-bold%20text-cyan-400%20text-3xl%20text-right&titleFontFamily=Montserrat&text=${encodeURIComponent(
-            post?.title
-          )}&textTailwind=font-medium%20text-white%20text-left%20text-7xl%20pt-20&textFontFamily=Raleway&logoUrl=https%3A%2F%2Fstupid-ai-johndoe-blogs.vercel.app%2Flogo.png&logoTailwind=text-center%20bg-transparent&bgUrl=${encodeURIComponent(
-            post?.featuredImage.url
-          )}&bgTailwind=bg-no-repeat%20bg-cover%20bg-opacity-20&footer=https%3A%2F%2Fstupid-ai-johndoe-blogs.vercel.app&footerTailwind=text-xl%20underline%20text-cyan-500&t=1685344677897&refresh=1`}
-        />
+        /> */}
         <meta name='description' content={post.title} />
         <meta property='og:title' content="Stupid AI-powered John Doe's Blog" />
         <meta property='og:description' content={post.title} />
         <meta property='og:type' content='article' />
         <meta name='twitter:card' content='summary' />
+        <meta
+          name='twitter:image'
+          content={`${process.env.NEXT_PUBLIC_URL_DEPLOY}/api/og?title=${encodeURIComponent(
+            post?.title
+          )}&image=${encodeURIComponent(post?.featuredImage.url)}`}
+        />
+        <meta name='twitter:card' content='summary_large_image' />
+
         <meta name='twitter:title' content="Stupid AI-powered John Doe's Blog" />
         <meta name='twitter:description' content={post.title} />
-        <meta
+        {/* <meta
           name='twitter:image'
           content={`https://og.tailgraph.com/og?fontFamily=Montserrat&title=&titleTailwind=font-bold%20text-cyan-400%20text-3xl%20text-right&titleFontFamily=Montserrat&text=${encodeURIComponent(
             post?.title
           )}&textTailwind=font-medium%20text-white%20text-left%20text-7xl%20pt-20&textFontFamily=Raleway&logoUrl=https%3A%2F%2Fstupid-ai-johndoe-blogs.vercel.app%2Flogo.png&logoTailwind=text-center%20bg-transparent&bgUrl=${encodeURIComponent(
             post?.featuredImage.url
           )}&bgTailwind=bg-no-repeat%20bg-cover%20bg-opacity-20&footer=https%3A%2F%2Fstupid-ai-johndoe-blogs.vercel.app&footerTailwind=text-xl%20underline%20text-cyan-500&t=1685344677897&refresh=1`}
-        />
+        /> */}
         <meta name='format-detection' content='telephone=no' />
         <link rel='manifest' href='./manifest.json' />
       </Head>
