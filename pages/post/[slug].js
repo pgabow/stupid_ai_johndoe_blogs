@@ -55,6 +55,7 @@ const PostDetails = ({ post }) => {
         {/* <meta property='og:image:width' content='2400' />
         <meta property='og:image:height' content='1260' /> */}
         {/* <meta property='og:url' content='https://stupid-ai-johndoe-blogs.vercel.app/intro' /> */}
+        {/* <meta property='og:url' content={imageOgGen} /> */}
         <meta property='og:image' content={imageOgGen} />
         <meta property='og:image:url' content={imageOgGen} />
         {/* <meta
@@ -69,6 +70,7 @@ const PostDetails = ({ post }) => {
         <meta property='og:title' content="Stupid AI-powered John Doe's Blog" />
         <meta property='og:description' content={post.title} />
         <meta property='og:type' content='article' />
+        <meta property='og:url' content='https://stupid-ai-johndoe-blogs.vercel.app' />
         <meta name='twitter:card' content='summary' />
         <meta name='twitter:image' content={imageOgGen} />
         <meta name='twitter:card' content='summary_large_image' />
