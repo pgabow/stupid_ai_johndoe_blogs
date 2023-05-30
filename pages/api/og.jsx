@@ -36,7 +36,7 @@ export default async function handler(req) {
             backgroundColor: 'white',
             backgroundImage: `url(${image})`,
             backgroundSize: '1200px 630px',
-            fontSize: 40,
+            fontSize: 50,
             letterSpacing: -2,
             fontWeight: 700,
             textAlign: 'center',
@@ -45,7 +45,7 @@ export default async function handler(req) {
           <div
             style={{
               marginBottom: '60px',
-              backgroundImage: 'linear-gradient(90deg, rgb(0, 124, 240), rgb(0, 223, 216))',
+              backgroundImage: 'linear-gradient(90deg, rgb(121, 40, 202), rgb(255, 0, 128))',
               backgroundClip: 'text',
               '-webkit-background-clip': 'text',
               color: 'transparent',
@@ -60,7 +60,7 @@ export default async function handler(req) {
               backgroundClip: 'text',
               '-webkit-background-clip': 'text',
               color: 'white',
-              fontSize: 70,
+              fontSize: 80,
               lineHeight: 1.1,
               fontFamily: 'Montserrat',
               // fontWeight: 400,
@@ -70,7 +70,6 @@ export default async function handler(req) {
           </div>
         </div>
       ),
-
       {
         width: 1200,
         height: 630,
