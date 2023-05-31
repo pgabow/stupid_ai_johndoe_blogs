@@ -5,6 +5,7 @@ import React from 'react'
 export const config = {
   runtime: 'edge',
 }
+// color: #F83E00
 
 export default async function handler(req) {
   try {
@@ -19,7 +20,7 @@ export default async function handler(req) {
       : 'Always fresh the dumbest of the dumbest news and ideas!'
     const image = hasImage
       ? searchParams.get('image')
-      : "https://stupid-ai-johndoe-blogs.vercel.app/preview.png"
+      : 'https://stupid-ai-johndoe-blogs.vercel.app/ogHomePage.jpg'
 
     return new ImageResponse(
       (
