@@ -71,7 +71,6 @@ const PostDetails = ({ post }) => {
         <meta property='og:description' content={post.title} />
         <meta property='og:type' content='article' />
         <meta property='og:url' content='https://stupid-ai-johndoe-blogs.vercel.app' />
-        <meta name='twitter:card' content='summary' />
         <meta name='twitter:image' content={imageOgGen} />
         <meta name='twitter:card' content='summary_large_image' />
 
