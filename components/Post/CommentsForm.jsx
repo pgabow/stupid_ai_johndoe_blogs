@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useState, useEffect } from 'react';
 import { submitComment } from '../../services';
+import { sendMessageToTelegram } from '../../utils/sendMessageToTelegram'
 
 const CommentsForm = ({ slug }) => {
     const [error, setError] = useState(false);
@@ -68,6 +69,9 @@ const CommentsForm = ({ slug }) => {
                         ...prevState,
                         ...formData,
                     }));
+										sendMessageToTelegram(
+                      `Stupid Blog \n\nЮзер ${commentObj.name}, email ${commentObj.email} пишет: \n\n'${commentObj.comment}'`
+                    )
                     setShowSuccessMessage(true);
                     setTimeout(() => {
                         setShowSuccessMessage(false);

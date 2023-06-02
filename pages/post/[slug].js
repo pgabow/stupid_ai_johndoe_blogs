@@ -5,30 +5,38 @@ import Head from 'next/head'
 
 import { getPosts, getPostDetails } from '../../services'
 
-import { PostDetail, Categories, PostWidget, Comments, CommentsForm, Loader, NotFoundPage } from '../../components'
+import {
+  PostDetail,
+  Categories,
+  PostWidget,
+  Comments,
+  CommentsForm,
+  Loader,
+  NotFoundPage,
+} from '../../components'
 
 const PostDetails = ({ post }) => {
-	const tempForUrl = `&t=1685344677897&refresh=1`
-	// const ogImageComplite = `https://og.tailgraph.com/og?fontFamily=Montserrat&title=&titleTailwind=font-bold%20text-cyan-400%20text-3xl%20text-right&titleFontFamily=Montserrat&text=${encodeURIComponent(
+  const tempForUrl = `&t=1685344677897&refresh=1`
+  // const ogImageComplite = `https://og.tailgraph.com/og?fontFamily=Montserrat&title=&titleTailwind=font-bold%20text-cyan-400%20text-3xl%20text-right&titleFontFamily=Montserrat&text=${encodeURIComponent(
   //   post?.title
   // )}&textTailwind=font-medium%20text-white%20text-left%20text-7xl%20pt-20&textFontFamily=Raleway&logoUrl=https%3A%2F%2Fstupid-ai-johndoe-blogs.vercel.app%2Flogo.png&logoTailwind=text-center%20bg-transparent&bgUrl=${encodeURIComponent(
   //   post?.featuredImage.url
   // )}&bgTailwind=bg-no-repeat%20bg-cover%20bg-opacity-20&footer=https%3A%2F%2Fstupid-ai-johndoe-blogs.vercel.app&footerTailwind=text-xl%20underline%20text-cyan-500`
-        {
-          /* ${encodeURIComponent(post.title)} */
-        }
-        {
-          /* ${encodeURIComponent(post.featuredImage.url)} */
-        }
-				const imageOgGen = `${process.env.NEXT_PUBLIC_URL_DEPLOY}/api/og?title=${encodeURIComponent(
-          post?.title
-        )}&image=${encodeURIComponent(post?.featuredImage.url)}`
+  {
+    /* ${encodeURIComponent(post.title)} */
+  }
+  {
+    /* ${encodeURIComponent(post.featuredImage.url)} */
+  }
+  const imageOgGen = `${process.env.NEXT_PUBLIC_URL_DEPLOY}/api/og?title=${encodeURIComponent(
+    post?.title
+  )}&image=${encodeURIComponent(post?.featuredImage.url)}`
 
   // console.log(ogImageComplite)
-	const router = useRouter();
+  const router = useRouter()
 
   if (router.isFallback) {
-    return <Loader />;
+    return <Loader />
   }
 
   if (!post) {
@@ -111,19 +119,19 @@ const PostDetails = ({ post }) => {
 export default PostDetails
 
 export async function getStaticProps({ params }) {
-    const data = await getPostDetails(params.slug)
-  
-    return {
-      props: { post: data },
-      revalidate: 10
-    }
+  const data = await getPostDetails(params.slug)
+
+  return {
+    props: { post: data },
+    revalidate: 10,
+  }
 }
 
 export async function getStaticPaths() {
-    const posts = await getPosts()
-  
-    return {
-        paths: posts.map(({ node: { slug }}) => ({ params : { slug }})),
-        fallback: true
-    }
+  const posts = await getPosts()
+
+  return {
+    paths: posts.map(({ node: { slug } }) => ({ params: { slug } })),
+    fallback: true,
+  }
 }
