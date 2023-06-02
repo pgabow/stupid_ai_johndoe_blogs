@@ -41,6 +41,7 @@ export default function Home({ posts }) {
       <Head>
         <title>Stupid AI-powered Blog John Doe</title>
         <link rel='icon' href='/favicon.png' />
+        <link rel='apple-touch-icon' href='/apple-fav.png' />
         <meta
           name='description'
           content='Always fresh the dumbest of the dumbest news and ideas!'
@@ -77,7 +78,7 @@ export default function Home({ posts }) {
         />
         <meta name='twitter:image' content={imageOgGen} />
         <meta name='format-detection' content='telephone=no' />
-        <link rel='manifest' href='./manifest.json' />
+        <link rel='manifest' href='/manifest.json' />
       </Head>
       <FeaturedPosts />
       <div className='grid grid-cols-1 lg:grid-cols-12 lg:gap-12'>

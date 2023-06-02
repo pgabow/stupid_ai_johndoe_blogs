@@ -60,6 +60,7 @@ const PostDetails = ({ post }) => {
         <meta property='og:locale' content='en_US' />
         <meta name='Address' content='Russia, Moscow' />
         <link rel='icon' href='/favicon.png' />
+        <link rel='apple-touch-icon' href='/apple-fav.png' />
         {/* <meta property='og:image:width' content='2400' />
         <meta property='og:image:height' content='1260' /> */}
         {/* <meta property='og:url' content='https://stupid-ai-johndoe-blogs.vercel.app/intro' /> */}
@@ -93,7 +94,7 @@ const PostDetails = ({ post }) => {
           )}&bgTailwind=bg-no-repeat%20bg-cover%20bg-opacity-20&footer=https%3A%2F%2Fstupid-ai-johndoe-blogs.vercel.app&footerTailwind=text-xl%20underline%20text-cyan-500&t=1685344677897&refresh=1`}
         /> */}
         <meta name='format-detection' content='telephone=no' />
-        <link rel='manifest' href='./manifest.json' />
+        <link rel='manifest' href='/manifest.json' />
       </Head>
       <div className='grid grid-cols-1 lg:grid-cols-12 lg:gap-12'>
         <div className='lg:col-span-8 col-span-1'>
