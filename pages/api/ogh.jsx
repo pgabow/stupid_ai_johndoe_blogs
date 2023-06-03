@@ -33,7 +33,7 @@ export default async function handler(req) {
             justifyContent: 'center',
             flexDirection: 'column',
             backgroundImage: 'linear-gradient(to bottom, #dbf4ff, #fff1f1)',
-            backgroundSize: '1200px 630px',
+            backgroundSize: '1200px 800px',
             fontSize: 60,
             letterSpacing: -2,
             fontWeight: 700,
@@ -89,7 +89,7 @@ export default async function handler(req) {
       ),
       {
         width: 1200,
-        height: 630,
+        height: 800,
       }
     )
   } catch (e) {

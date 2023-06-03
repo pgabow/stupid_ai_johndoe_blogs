@@ -9,7 +9,7 @@ export const config = {
 
 export default async function handler(req) {
   try {
-		console.log('ку')
+    console.log('ку')
     const { searchParams } = new URL(req.url)
     // ?title=<title>
     // ?image=<image_url>
@@ -36,7 +36,7 @@ export default async function handler(req) {
             flexWrap: 'nowrap',
             backgroundColor: 'white',
             backgroundImage: `url(${image})`,
-            backgroundSize: '1200px 630px',
+            backgroundSize: '1200px 800px',
             fontSize: 50,
             letterSpacing: -2,
             fontWeight: 700,
@@ -73,7 +73,7 @@ export default async function handler(req) {
       ),
       {
         width: 1200,
-        height: 630,
+        height: 800,
       }
     )
   } catch (e) {
